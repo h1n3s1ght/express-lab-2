@@ -14,3 +14,5 @@ app.get("/greeting", (req, res) => {
 app.get("/greeting/:name", (req, res) => {
     res.send('Well hello, ' + req.params.name + "!" );
 })
+
+//Tip Calculator
