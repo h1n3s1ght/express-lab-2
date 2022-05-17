@@ -15,4 +15,7 @@ app.get("/greeting/:name", (req, res) => {
     res.send('Well hello, ' + req.params.name + "!" );
 })
 
-//Tip Calculator
+//Tip Calculator------ Route to "/tip"
+app.get("/tip/:total/:tipPercentage", (req, res) => {
+    res.send("Your total is $" + req.params.total +". You would like to tip " + req.params.tipPercentage + "%.  That means you would owe for tip: $" +  ((req.params.tipPercentage/100) * req.params.total))
+})
