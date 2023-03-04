@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 let bottles = 100;
-let PORT = 3000;
+let PORT = 3002;
 
 //set up active link
 app.listen(PORT);
